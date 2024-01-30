@@ -1,0 +1,112 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+form button {
+    display: block;
+    padding: 10px 10px;
+    background: hsl(120, 56%, 40%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 5rem;
+    margin-left: auto;
+}
+
+header {
+    background-color: teal;
+    padding: 40px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+.img {
+    float: left;
+    height: 150px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+aside {
+    float: left;
+    display: flex;
+    width: 150px;
+}
+
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    text-align: right;
+}
+
+a:link {
+    color: teal;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+main {
+    margin-left: 10rem;
+}
+
+
+
+footer {
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    position: fixed;
+    color: white;
+    background-color: teal;
+}
+
+@media (max-width: 600px) {
+    aside {
+        float: none;
+    }
+    
+    nav {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .list-item:not(:last-child) {
+        border-right: 1px solid #888;
+    }
+
+    main {
+        margin-left: 0px;
+    }
+}
+
+ 
